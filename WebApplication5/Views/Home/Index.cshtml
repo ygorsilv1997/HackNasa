@@ -2,30 +2,87 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <style>
+        html {
+            margin: 0;
+            height: 100%;
+        }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        .index {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            color: #ccc;
+        }
+
+        .background {
+            background-image: url(../Content/images/background-nebulosa.jpg);
+            color: #ccc;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            letter-spacing: 20px;
+        }
+
+        em {
+            font-family: 'Josefin Sans', sans-serif;
+            color: currentColor;
+            font-size: 15vmin;
+            position: relative;
+            font-style: normal;
+            width: 20vmin;
+            text-align: center;
+        }
+
+        .btn-comecar {
+            color: #2ec6f8;
+            font-size: 19pt;
+            text-decoration: none;
+        }
+
+            .btn-comecar:hover {
+                color: #af7aac;
+                /*font-weight: 800;*/
+                text-decoration: none;
+            }
+
+        @@media (max-width: 1028px) {
+            h1 {
+                letter-spacing: 0px;
+            }
+        }
+
+        @@media (max-width: 680px) {
+            h1 {
+                font-size: 10pt;
+            }
+        }
+    </style>
+</head>
+<body class="background index">
+    <div class="row text-center">
+        <h1>
+            <em>N</em>
+            <em>E</em>
+            <em>B</em>
+            <em>U</em>
+            <em>L</em>
+            <em>O</em>
+            <em>S</em>
+            <em>A</em>
+        </h1>
+        <a class=btn-comecar>Começar ></a>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</body>
